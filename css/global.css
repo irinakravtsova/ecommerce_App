@@ -1,0 +1,83 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #1a1f16;
+}
+
+.container {
+  padding-left: 122px;
+  padding-top: 32px;
+  width: 1440px;
+  background: #ededed;
+
+}
+.link__html {
+  font-size: 20px;
+}
+.line__wrapper {
+  margin-top: 51px;
+  height: 921px;
+}
+
+.bag {
+  padding-top: 41px;
+  padding-right: 28px;
+  padding-left: 28px;
+ 
+  text-align: center;
+  /* border-left: 4px solid rgba(26, 31, 22, 0.5);  */
+
+}
+.bag__title {
+  margin-bottom: 10px;
+  font-size: 39px;
+
+}
+
+.bag__item-wrapper {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 288px;
+
+display: flex;
+flex-wrap: wrap;
+justify-content: start;
+row-gap: 16px;
+column-gap: 16px;
+  text-align: center;
+}
+.bag__item {
+  padding: 8px;
+border-radius: 12px;
+background: #fff;
+
+}
+.bag__image {
+  width: 64px;
+height: 64px;
+
+}
+.bag__btn-wrapper {
+  padding: 16px 83px 16px 83px;
+  margin-bottom: 28px;
+}
+
+.bag__order {
+  padding-left: 13px;
+ display: flex;
+ flex-direction: column;
+  
+}
+.bag__orders-title {
+  margin-bottom: 24px;
+
+font-size: 39px;
+
+}
+.bag__orders-text {
+  margin-bottom: 10px;
+  text-align: left;
+
+font-size: 20px;
+
+}

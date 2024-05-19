@@ -1,0 +1,79 @@
+.prodact {
+  display: flex;
+}
+.card {
+  padding: 56px 24px;
+width: 953px;
+}
+.card__content {
+  margin-top: 28px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 24px;
+}
+.card__image {
+   padding: 8px; 
+  }
+.card__image-wrapper {
+  border-radius: 13px;
+  padding: 8px;
+  background: #fff;
+
+}
+.product__image {
+  width: 242px;
+  height: 302px;
+}
+.card__text {
+ max-width: 607px;
+}
+
+
+
+
+
+h1 {
+  font-weight: 700;
+font-size: 61px;
+}
+.subtitle {
+  margin-top: 8px;
+  font-size: 31px;
+color: rgba(26, 31, 22, 0.5);
+}
+.price {
+  margin-bottom: 8px;
+  font-size: 31px;
+}
+.mini-content {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.card__btn-wrapper {
+  margin-right: 16px;
+  margin-bottom: 32px;
+  text-align: right;
+  cursor: pointer;
+
+}
+h3 {
+  font-size: 31px;
+}
+.description {
+  margin-top: 8px;
+  font-size: 20px;
+letter-spacing: -0.02em;
+}
+.bag__item-wrapper_prodactCard {
+  margin-bottom: 26px;
+  padding: 8px;
+  width: 288px;
+height: 192px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+row-gap: 24px;
+column-gap: 16px;
+  text-align: center;
+}
+

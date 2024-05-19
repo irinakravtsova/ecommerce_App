@@ -1,0 +1,116 @@
+
+.checkout {
+  padding-top: 24px;
+  display: flex;
+  gap: 102px;
+}
+.checkout__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  grid-row: 8px;
+}
+
+
+.address {
+
+  border-radius: 13px;
+padding: 16px;
+width: 871px;
+height: 247px;
+  background: #fff;
+}
+.address__wrapper {
+  
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.address__content {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.address__form {
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.title {
+  width: 300px;
+  font-size: 31px;
+text-transform: uppercase;
+
+}
+.text {
+min-width: 300px;
+  font-size: 20px;
+}
+.text-label {
+
+color: rgba(26, 31, 22, 0.5);
+}
+.btn-change {
+  border: 1px solid #1a1f16;
+border-radius: 11px;
+padding: 8px 24px;
+width: 124px;
+height: 38px;
+font-size: 16px;
+letter-spacing: -0.02em;
+color: #1a1f16;
+
+}
+.payment {
+  border-radius: 13px;
+padding: 16px;
+width: 871px;
+height: 153px;
+background: #fff;
+}
+.payment__content {
+display: flex;
+gap: 15px;
+}
+.payment__card {
+  width: 24px;
+  height: 24px;
+}
+.checkbag {
+  border-radius: 13px;
+padding: 16px;
+width: 871px;
+background: #fff;
+}
+
+/* //total previev */
+.total {
+border-radius: 12px;
+padding: 16px;
+width: 243px;
+height: 240px;
+background: #fff;
+}
+.total__text {
+  margin-bottom: 16px;
+  font-size: 20px;
+  letter-spacing: -0.02em;  
+ color: #000;
+}
+.sum-box {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  color: #60695c;
+}
+
+.total__sum-text {
+  font-size: 20px;
+  color: #e5252c;
+}
+

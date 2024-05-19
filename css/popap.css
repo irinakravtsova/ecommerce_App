@@ -1,0 +1,230 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.popup_open,
+.popup__payment_open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup__content {
+  position: relative;
+  width: 676px;
+  max-height: 100%;
+  padding: 32px;
+  overflow-y: auto;
+   background-color: #fff;
+  border-radius: 15px;
+}
+.popap__laible {
+  margin-bottom: 8px;
+  font-size: 16px;
+letter-spacing: -0.02em;
+color: rgba(26, 31, 22, 0.5);
+}
+.order__input {
+  margin-bottom: 24px;
+  border-radius: 13px;
+padding: 8px 16px;
+width: 596px;
+height: 59px;
+box-shadow: 0 4px 16px 0 rgba(26, 31, 22, 0.15);
+background: #fff;
+font-size: 20px;
+color: rgba(26, 31, 22, 0.5);
+}
+
+.btn-save {
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.6px;
+  text-align: center;
+  color: #fff;
+  background: #1a1f16;
+  text-decoration: none;
+    border-radius: 10px;
+padding: 8px 24px;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+font-weight: 500;
+
+}
+/* .order__input {
+  margin-bottom: 45px;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding-block: 0px;
+  font-size: 25px;
+  letter-spacing: -0.75px;
+  line-height: 34px;
+  color: black;
+  border: none;
+  border-bottom: 2px solid black;
+} */
+.input:focus {
+  outline: none;
+}
+.input::placeholder {
+  color: gray;
+}
+
+.payment-wrapper {
+  display: flex;
+  gap: 15px;
+}
+.payment-check {
+  align-items: center;
+  display: inline-flex;
+}
+/* .btn-selected {
+  z-index: -1;
+  opacity: 0;
+  -webkit-user-select: none;
+  user-select: none;
+  align-items: center;
+  display: inline-flex;
+  position: absolute;
+} */
+
+ /* .btn-selected+label:before {
+  content: "";
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  border: 1px solid #60695C;
+border-radius: 100px; 
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 19px;
+  height: 18px;
+  margin-right: 20px;
+  display: inline-block;
+  background-image: url(/src/images/radio.png);
+}  */
+.payment-wrapper {
+  padding: 8px;
+}
+/* .form__radio {
+  padding: 16px 8px;
+}
+
+.form_radio input[type=radio] {
+
+  /* width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}  */
+/* .btn-selected+label:checked {
+  background-image: url(/src/images/radio.png);
+} */
+
+/* радиокнопки */
+
+/* .real-radio {
+ 
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  position: relative;
+  margin-right: 5px;
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  vertical-align: text-top;
+  background: #fff;
+  border: 1px solid #60695C;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+label::before {
+  content: '';
+  display: inline-block;
+  background-position: 50%;
+width: 12px;
+height: 15px;
+border-radius: 1px;
+background-color: #000; */
+
+/* выравнивание по центру большого квадрата */
+/* position: absolute;
+left: 50%;
+top: 50%; 
+transform: translate(-45%, -45%) scale(0); */
+/* transition: 0.2s ease-in; */
+
+/* display: none;
+} */
+
+/* .real-radio:checked + label::before {
+  display: block;
+  transform: translate(-45%, -45%) scale(1);
+
+} */
+
+
+.form_radio {
+	margin-bottom: 10px;
+}
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+.form_radio label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: white;
+  border: 1px solid #000; 
+
+}
+ 
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+	background: rgb(24, 24, 25);
+  border: 1px solid #fff; 
+}
+ 
+/* Hover */
+.form_radio label:hover:before {
+	filter: brightness(120%);
+}
+ 
+/* Disabled */
+.form_radio input[type=radio]:disabled + label:before {
+	filter: grayscale(100%);
+}

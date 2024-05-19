@@ -1,0 +1,95 @@
+/* :root {
+ font-family: "Open Sans", sans-s"Cabin", sans-seriferif;
+ second-family: ;
+} */
+
+
+.itemstList {
+  display: flex;
+}
+.itemts {
+ width: 953px;
+padding: 20px;
+}
+.items__wrapper {
+  /* max-width: 953px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+  /* column-gap: 16px;  */
+  text-align: center;
+}
+.items__list {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.item__card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.image__wrapper {
+  margin-bottom: 8px;
+  border-radius: 22px;
+padding: 16px;
+/* width: 191px;
+height: 232px; */
+background: #fff;
+}
+.item-image {
+  width: 159px;
+  height: 200px;
+}
+
+.item__content {
+padding: 8px;
+width: 191px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+}
+.item-model {
+  margin-bottom: 8px;
+height: 54px;
+  font-size: 20px;
+}
+
+.item-series {
+  margin-bottom: 8px;
+font-size: 16px;
+letter-spacing: -0.02em;
+color: #60695c;
+}
+.price-wrapper {
+  padding: 11px 8px 11px 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 43px;
+  align-items: center;
+}
+.item-price {
+font-size: 20px;
+
+
+}
+.add-bag {
+  width: 25px;
+  height: 25px;
+  background-image: url("./src/images/Button.png");
+  background-size: cover;
+
+}
+.btn__show-cards {
+  font-size: 25px;
+  padding: 25px;
+  border: 2px  solid black;
+}
+
+
+ 
