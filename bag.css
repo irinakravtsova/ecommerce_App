@@ -1,0 +1,100 @@
+.big__bag {
+  display: flex;
+  
+}
+h2 {
+  font-size: 48px;
+}
+.big__bag__inner {
+   width: 973px;
+  padding: 48px;
+}
+
+.big__bag__content {
+  margin-top: 18px;
+}
+
+.big__bag__wrapper {
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.big__bag__item {
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  background: #fff;
+}
+
+.big__bag-image {
+  width: 203px;
+  height: 254px;
+
+}
+.big__bag__item__content {
+  max-width: 604px;
+}
+.big__bag__item__content-title {
+  margin-bottom: 8px;
+  font-size: 31px;
+}
+.big__bag__item__content-subtitle {
+  margin-bottom: 16px;
+  font-size: 20px;
+color: #60695c;
+}
+.big__bag__item__content-description {
+  font-size: 20px;
+letter-spacing: -0.02em;
+}
+.price__currency,
+.counter  {
+   font-size: 20px;
+}
+
+.price__wrapper {
+  width: 593px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.bag__counter {
+  width: 111px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.minus-btn,
+.add-btn {
+  width: 34px;
+  height: 34px;
+}
+
+.bag__item-wrapper_prodactCard {
+  margin-bottom: 26px;
+  padding: 8px;
+  width: 288px;
+/* height: 192px; */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+row-gap: 24px;
+column-gap: 16px;
+  text-align: center;
+}
+.bag-empty {
+  font-size: 48px;
+}
+.bag__total {
+  margin-bottom: 32px;
+}
+.usd::after {
+  content: "$";
+}
