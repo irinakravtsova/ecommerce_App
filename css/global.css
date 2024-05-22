@@ -77,7 +77,10 @@ font-size: 39px;
 .bag__orders-text {
   margin-bottom: 10px;
   text-align: left;
-
 font-size: 20px;
-
+}
+.error {
+  margin-top: 32px;
+  font-size: 48px;
+color: #1a1f16;
 }

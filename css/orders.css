@@ -3,3 +3,14 @@
   margin-bottom: 48px;
   font-size: 48px;
 }
+.orders {
+  display: flex;
+  gap: 102px;
+ 
+}
+.order-error {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  height: 500px;
+  font-size: 48px;
+}
