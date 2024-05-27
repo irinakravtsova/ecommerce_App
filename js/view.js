@@ -4,10 +4,8 @@ export function createItemsView(selector) { //передай действие, �
    return {
     node,
     renderItems: function(items) {
-   
-      items.forEach(item => {
+        items.forEach(item => {
         const { id, model, series, price, image } = item;
-
         const outputListHTML = 
         `
          <li class="item__card" data-product-id="${id}">
@@ -84,6 +82,7 @@ export function createItemsView(selector) { //передай действие, �
     }
   }
 }
+
  export function createBagPeviewView(selector) {
     const nodeBag = document.querySelector(selector);
     return {
@@ -96,67 +95,28 @@ export function createItemsView(selector) { //передай действие, �
               <div class="bag__item">
                 <img class="bag__image" src="${item.image}" alt="">
               </div>
-              
-             `
+            `
           this.nodeBag.innerHTML = bagHTML
         })
-  
       }
     }
-  }
+  };
 
-  export function createBag(selector) {
-    const bagNode = document.querySelector(selector);
+  export function createOrdersPeviewView(selector) {
+    const ordersNode = document.querySelector(selector);
     return {
-      bagNode,
-      renderBag: function(findProducts) {
+      ordersNode,
+      renderOrdersPreview: function(orders) {
         let out = '';
-        findProducts.forEach(item => {
-          const { id, model, series, price, image, description, rating, descriptionShort } = item;
-           out += 
-          `
-          <div class="big__bag__item" data-product-id="${id}">
-          <div class="big__bag__item-image">
-            <img class="big__bag-image" src="${image}" alt="">
-          </div>
-          <div class="big__bag__item__content">
-            <h3 class="big__bag__item__content-title">${model}</h3>
-            <p class="big__bag__item__content-subtitle">${series}</p>
-            <p class="big__bag__item__content-description">${descriptionShort}</p>
-            <img src="./src/images/rating_4.5.png" alt="">
-      
-            <div class="price">
-              <p class="big__bag__item__content-price">$ ${price} x ${bag[id]}</p>
-              <div class="bag__counter">
-                <button class="minus-btn" data-action="minus" data-id="${id}">
-                  <img class="minus-btn" data-action="minus" data-id="${id}" src="./src/images/Increase-Button.png" alt="">
-                </button>
-                <p class="counter" data-counter>${bag[id]}</p>
-                <button class="add-btn" data-action="plus" data-id="${id}">
-                  <img class="add-btn" data-action="plus" data-id="${id}" src="./src/images/Decrease-Button.png" alt="">
-                </button>
-              </div>
-              </div>
-            </div>
-        </div>
-        ` 
-        this.bagNode.innerHTML = out;
-      })
+         orders.forEach(order => {
+          out += `
+             <a class="order-one bag__orders-text" href="./orders.html?id=${order.id}"># ${order.id};</a>
+             `
+        })
+         this.ordersNode.innerHTML = out;
+      }
     }
-  }
-}
-
-
-
-   
-
+  };
+ 
 
   
-
-
-  
-
-
-      
-
-

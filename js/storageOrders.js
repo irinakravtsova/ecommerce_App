@@ -2,7 +2,6 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { collection, addDoc, getDocs, query, orderBy, limit } from "firebase/firestore"; 
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyDjy5thQwhCO9qDdjehZ-IUT5KR75zmWRo",
   authDomain: "ecommerce-app-65411.firebaseapp.com",
@@ -10,8 +9,7 @@ const firebaseConfig = {
   storageBucket: "ecommerce-app-65411.appspot.com",
   messagingSenderId: "612979040841",
   appId: "1:612979040841:web:3e8a0047a9dca8e03bd598",
-  measurementId: "G-RK5P0291EP",
-
+  measurementId: "G-RK5P0291EP"
 };
 
 export function createOrdersStorage(key) {
@@ -40,7 +38,7 @@ export function createOrdersStorage(key) {
             sum: doc.data().sum,
             total: doc.data().total
           })
-          console.log(`${doc.id} => ${doc.data().sum}`);
+          // console.log(`${doc.id} => ${doc.data().sum}`);
       });
       return orders;
     },

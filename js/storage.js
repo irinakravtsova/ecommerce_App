@@ -10,18 +10,12 @@ const firebaseConfig = {
   storageBucket: "ecommerce-app-65411.appspot.com",
   messagingSenderId: "612979040841",
   appId: "1:612979040841:web:3e8a0047a9dca8e03bd598",
-  measurementId: "G-RK5P0291EP",
-
+  measurementId: "G-RK5P0291EP"
 };
-
-
 
 export function createItemsStorage(key) {
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);//добавление данных
-  // const storage = getStorage();
-  // const AppleRef = ref(storage, 'images/Apple Watch.jpg');
-  // console.log(AppleRef);
 
   return {
     key,
@@ -52,65 +46,3 @@ export function createItemsStorage(key) {
   }
 }
 
-
-
-    // push: async function(movie) {
-    //   try {
-    //     await setDoc(doc(this.db, this.key, movie.id), {//переделываем add на set, т.к. нужно, чтобы id не создавалось, а приходило из модели
-    //       title: movie.title,
-    //       done: movie.done,
-    //       createdAdd: serverTimestamp()//при создании документа добавь дату создания
-    //     }); 
-    //   } catch (e) {
-    //     console.error("Error adding document: ", e);
-    //     }
-    //   },
-
-    // delete: async function(movie) {
-    //   const batch = writeBatch(this.db, this.key, movie.id);
-       
-    //   const ref = doc(this.db, this.key, movie.id);
-      
-    //   batch.delete(ref);
-    //   await batch.commit();
-  
-    //   },
-
-    // update: async function(movie) {
-    //   const ref = doc(this.db, this.key, movie.id);
-    //   console.log(movie);
-    //   await updateDoc(ref, {
-    //      done: movie.done
-  
-    //     });  
-    // }
-
-
-// async function add() {//добавить новую запись
-//   try {
-//     const docRef = await addDoc(collection(db, "items"), {
-//       // id: '',
-//       model: "Ada",
-//       series: "Lovelace",
-//       imageURL: "",
-//       description: 'lorem lorem lorem lorem',       
-//       price: 18.15,
-//       rating: '4.5/5',      
-//       descriptionShort: 'lorem'
-
-//     });
-//     console.log("Document written with ID: ", docRef.id);
-//   } catch (e) {
-//     console.error("Error adding document: ", e);
-//   }
-// }
-
-// async  function get() {
-//   const querySnapshot = await getDocs(collection(db, "product list"));
-//   querySnapshot.forEach((doc) => {
-//     console.log(`${doc.id} => ${doc.data().title}`);
-// });
-
-// }
-// add();
-// get();
