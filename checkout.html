@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/src/css/style.css">
+  <title>Оформление заказа</title>
+
+</head>
+<body>
+  <div class="container">
+    <a class="link__html" href="./bag.html">&larr; Назад в корзину</a>
+    <div class="checkout">
+      <div class="checkout__wrapper">
+               
+        <div class="address">
+          <h3 class="title">Адрес доставки</h3>
+          <div class="address__wrapper">
+     
+              <form class="address__form" action="">
+               <div class="address__content">
+                <p class="input-name text">Витя Иванов</p>
+                <p class="input-street text">Ленинградский проспект дом 4</p>
+                <p class="input-city text">Москва</p>
+                <p class="input-phone text">8 920 040 34 55</p> 
+             
+               </div>
+              </form>
+         
+            <button class="js-btn-address btn__address btn-change">Изменить</button>
+          </div>
+        </div>
+
+        <div class="js-popup popup ">
+          <div class="js-popup__content popup__content">
+            <button class="js-popup__close-btn popup__close-btn"></button>
+                    
+              <form class="order__form" action="" >
+                <p class="popap__laible">Имя</p>
+                <input 
+                class="js-popup__input-name input order__input"
+                type="text"
+                name="name"
+                placeholder="Витя Иванов">
+          
+                <p class="popap__laible">Улица, дом</p>
+                <input  
+                class="js-popup__input-street input order__input"
+                type="text"
+                name="name"
+                placeholder="Ленинградский проспект, 27">
+
+                <p class="popap__laible">Город</p>
+                <input  
+                class="js-popup__input-city input order__input"
+                type="text"
+                name="name"
+                placeholder="Москва">
+          
+                <p class="popap__laible">Телефон</p>
+                <input id="phone-mask"
+                class="js-popup__input-phone input order__input"
+                type="tel"
+                name="phone"
+                placeholder="Телефон">
+
+                <button class="btn-save" type="button">Сохранить</button>
+              </form>
+           </div>
+        </div>
+
+        <div class="payment">
+          <h3 class="title">способ оплаты</h3>
+          <div class="address__wrapper">
+            <div class="payment__content">
+              <img class="payment__card" src="./src/images/card.png" alt="">
+              <p class="input-payment text">Оплата картой при получении</p>
+            </div>
+            <button class="js-btn__payment btn-change">Изменить</button>
+          </div>
+        </div>
+        
+        <!-- попап -->
+
+        <div class="js-popup-payment popup ">
+          <div class="js-popup__content popup__content">
+           
+          <div class="payment-wrapper">
+            <div class="form_radio">
+              <input id="radio-1" type="radio" name="r" value="Оплата картой при получении" checked>
+              <label for="radio-1" class="text text-label">Оплата картой при получении</label>
+            </div>
+          </div>
+          
+          <div class="payment-wrapper">
+            <div class="form_radio">
+              <input id="radio-2" type="radio" name="r" value="Оплата наличными при получении">
+              <label for="radio-2" class="text text-label">Оплата наличными при получении</label>
+            </div>
+          </div>  
+           
+          <button class="btn-save btn-paymant" type="button">Сохранить</button>
+                       
+           </div>
+        </div>
+
+        <div class="check-bag">
+          <h2 class="title">проверь корзину</h2>
+          <div class="big__bag__wrapper checkout-bag">
+             <img src="./src/images/Line 3.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="total">
+        <h2 class="text total__text">Сумма</h2>
+        <div class="sum-box">
+          <p class="total-text label">Товары:</p>
+          <span class="total-text sum-text_usd usd">  </span>
+        </div> 
+        <div class="sum-box">
+          <p class="total-text">Доставка:</p>
+          <p class="delivery total-text">$ 6.99</p>
+        </div>
+        <img src="./src/images/total_line.png" alt="">
+        <div class="sum-box">
+          <p class="total__sum-text">Стоимость: $
+            <span class="total-sum-text sum-text_usd" > </span>
+          </p>
+        </div>
+        <img src="./src/images/total_line.png" alt="">
+       
+        <button class="btn__post" >
+          <img class="btn__post" src="./src/images/Btn_post.png" alt="">
+        </button>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="https://unpkg.com/imask"></script>
+  <script type="module" src="/src/js/modelOrders.js"></script> 
+  <script type="module" src="/src/js/storageOrders.js"></script> 
+  <script type="module" src="/src/js/popupAddress.js"></script> 
+  <script type="module" src="/src/js/popupPaymant.js"></script> 
+  <script type="module" src="/src/js/checkout.js"></script>
+
+</body>
+</html>
