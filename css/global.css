@@ -84,3 +84,11 @@ font-size: 20px;
   font-size: 48px;
 color: #1a1f16;
 }
+.bag-msg {
+  display: none;
+}
+.usd::before {
+  content: "$";
+  margin-right: 5px;
+  
+}

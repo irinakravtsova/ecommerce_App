@@ -11,6 +11,19 @@
 .order-error {
   margin-top: 32px;
   margin-bottom: 48px;
-  height: 500px;
+  height: 1120px;
   font-size: 48px;
+}
+.error-msg {
+  display: none;
+}
+.bag-orders {
+  margin-top: 24px;
+  width: 871px;
+  background: #fff;
+  border-radius: 13px;
+
+}
+.order__card-wrapper {
+ margin-top: 0;
 }

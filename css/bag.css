@@ -25,6 +25,7 @@ h2 {
   display: flex;
   gap: 16px;
   background: #fff;
+  border-radius: 21px;
 }
 
 .big__bag-image {
@@ -95,6 +96,6 @@ column-gap: 16px;
 .bag__total {
   margin-bottom: 32px;
 }
-.usd::after {
+/* .usd::after {
   content: "$";
-}
+} */

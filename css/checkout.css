@@ -10,30 +10,24 @@
   gap: 24px;
   grid-row: 8px;
 }
-
-
 .address {
-
-  border-radius: 13px;
-padding: 16px;
-width: 871px;
-height: 247px;
+  padding: 16px;
+  width: 871px;
+  height: 247px;
   background: #fff;
+  border-radius: 13px;
 }
 .address__wrapper {
-  
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
 }
 .address__content {
-  
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 .address__form {
-
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -81,7 +75,7 @@ gap: 15px;
   width: 24px;
   height: 24px;
 }
-.checkbag {
+.check-bag {
   border-radius: 13px;
 padding: 16px;
 width: 871px;
